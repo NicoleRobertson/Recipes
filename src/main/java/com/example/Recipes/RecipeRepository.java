@@ -38,4 +38,13 @@ public class RecipeRepository {
     public List<Recipe> getRecipes() {
         return recipes;
     }
+
+    public Recipe getRecipe(Long id) {
+        for (Recipe recipe : recipes) {
+            if (recipe.getId() == id) {
+                return recipe;
+            }
+        }
+        return null;
+    }
 }

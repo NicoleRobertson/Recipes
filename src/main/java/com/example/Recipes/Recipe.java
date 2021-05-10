@@ -9,6 +9,7 @@ public class Recipe {
     private Difficulty difficulty;
     private String description;
     private String ingredients;
+    private String imageName;
 
     public Recipe (Long id, String name, Cuisine cuisine, Integer numOfIngredients,
                    boolean isVegetarian, Difficulty difficulty,String description, String ingredients) {
@@ -20,6 +21,7 @@ public class Recipe {
         this.difficulty = difficulty;
         this.description = description;
         this.ingredients = ingredients;
+        this.imageName = imageName;
     }
 
     public long getId() {
