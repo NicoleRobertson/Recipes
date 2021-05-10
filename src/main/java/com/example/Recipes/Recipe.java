@@ -21,4 +21,36 @@ public class Recipe {
         this.description = description;
         this.ingredients = ingredients;
     }
+
+    public long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Cuisine getCuisine() {
+        return cuisine;
+    }
+
+    public int getNumOfIngredients() {
+        return numOfIngredients;
+    }
+
+    public boolean isVegetarian() {
+        return isVegetarian;
+    }
+
+    public Difficulty getDifficulty() {
+        return difficulty;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getIngredients() {
+        return ingredients;
+    }
 }

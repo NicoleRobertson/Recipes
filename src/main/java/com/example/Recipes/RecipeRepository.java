@@ -34,4 +34,8 @@ public class RecipeRepository {
                 "3. Het a skillet over medium high heat, add chorizo mixture and cook until cripp (5-7 min). Transfer chorizo to a plate, reserving grease in the skillet. 4. Heat tortillas in the grease until warm. Fill with chorizo, onion and cilantro", "Chorizo Sausage, Chipotle Peppers in Adobo Sauce, Corn Tortillas, Onoin, Cilantro"));
 
     }
+
+    public List<Recipe> getRecipes() {
+        return recipes;
+    }
 }

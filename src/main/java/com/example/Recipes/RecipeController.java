@@ -15,6 +15,8 @@ public class RecipeController {
 
     @GetMapping("/")
     public String recipes(Model model) {
-        return repository
+        List<Recipe> recipes = repository.getRecipes();
+        model.addAttribute("recipes", recipes);
+        return "Recipes";
     }
 }
