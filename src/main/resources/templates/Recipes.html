@@ -22,7 +22,6 @@ JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         <div class="col-sm" th:each="recipe : ${recipes}">
             <div class="card">
                 <div class="card-body" >
-                    <img src="..." class="card-img-top" alt="...">
                     <h5 class="card-title" th:text="${recipe.name}"></h5>
                     <p class="card-text">Name</p>
                     <a th:href="'/Home/recipe/'+ ${recipe.id}" class="btn btn-primary">Recipe Details</a>

@@ -12,7 +12,7 @@ public class Recipe {
     private String imageName;
 
     public Recipe (Long id, String name, Cuisine cuisine, Integer numOfIngredients,
-                   boolean isVegetarian, Difficulty difficulty,String description, String ingredients) {
+                   boolean isVegetarian, Difficulty difficulty,String description, String ingredients, String imageName) {
         this.id = id;
         this.name = name;
         this.cuisine = cuisine;
@@ -54,5 +54,8 @@ public class Recipe {
 
     public String getIngredients() {
         return ingredients;
+    }
+    public String getImageName() {
+        return imageName;
     }
 }
