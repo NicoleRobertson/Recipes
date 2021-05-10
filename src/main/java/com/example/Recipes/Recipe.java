@@ -11,7 +11,7 @@ public class Recipe {
     private String ingredients;
 
     public Recipe (Long id, String name, Cuisine cuisine, Integer numOfIngredients,
-                   boolean isVegetarian,Difficulty difficulty,String description, String ingredients) {
+                   boolean isVegetarian, Difficulty difficulty,String description, String ingredients) {
         this.id = id;
         this.name = name;
         this.cuisine = cuisine;
