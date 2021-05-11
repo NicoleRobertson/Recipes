@@ -32,6 +32,8 @@ public class RecipeRepository {
                 "Bake in the oven for 25-35 minutes or until chicken is tender. 4. Sprinkle chicken evenly with cheese and continue baking for 3-5 minutes. 5. Top with sour cream and serve with rice.", "Chicken breasts, Taco Seasoning Mix, Salsa, Cheddar Cheese, Sour Cream","SalsaChicken.png"));
         recipes.add(new Recipe(11L, "Chorizo Street Tacos", Cuisine.MEXICAN, 5, false, Difficulty.MEDIUM, "1. Remove chorizo case and cruble the meet 2. Mix chorizo and chipotle peppers in adobo sauce together in a bowl" +
                 "3. Het a skillet over medium high heat, add chorizo mixture and cook until cripp (5-7 min). Transfer chorizo to a plate, reserving grease in the skillet. 4. Heat tortillas in the grease until warm. Fill with chorizo, onion and cilantro", "Chorizo Sausage, Chipotle Peppers in Adobo Sauce, Corn Tortillas, Onoin, Cilantro","ChorizoStreetTacos.png"));
+        recipes.add(new Recipe(12L, "American Pancakes", Cuisine.AMERICAN, 7, true, Difficulty.DIFFICULT, "1. Sift the flour, baking poweder, salt and caster sugar into a large bowl. 2. Whisk with milk, egg and melted butter. 3. Add a knob of butter in a medium heated  frying pan. Add a ladle of batter and wait until it starts bubbling. " +
+                "Turn it over and cook until both sides are golden brown. 4. Repeat until all batter is used up. 5. Serve with maple syrup and extra butter!", "Flour, Baking Powder, Salt, Sugar, Milk, Egg, Butter", "AmericanPancakes.jpg"));
 
     }
 

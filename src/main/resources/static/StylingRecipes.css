@@ -57,3 +57,7 @@ li {
     border-right-width: 10px;
     border-color: red;
 }
+
+.btn btn-primary {
+background-color: #090;
+}

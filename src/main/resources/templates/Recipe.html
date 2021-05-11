@@ -15,7 +15,7 @@
 </div>
 <table>
     <tr>
-        <th>Name</th>
+        <th>Recipe</th>
         <th th:text="${recipe.name}"></th>
     </tr>
     <tr>
@@ -43,7 +43,6 @@
         <th th:text="${recipe.description}"></th>
     </tr>
     <tr>
-        <th>Recipe Image</th>
         <th><img width=400 th:src="'/'+ ${recipe.imageName}"/></th>
     </tr>
 </table>
