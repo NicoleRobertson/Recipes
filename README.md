@@ -11,5 +11,5 @@ Nice-to-have features:
 - Search for recipes by keywords
 - Print a shopping list
 - Create your own recipe and add it to the web page
-- Pagination
-- Describing the cooking method 
+- Describing the cooking method - done
+- Pagination - decided not to do since we don't have a big list of recipes
