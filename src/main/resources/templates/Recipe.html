@@ -9,6 +9,9 @@
 <div>
     <p><a href="/Home">Back to all recipes</a></p>
 </div>
+<div>
+    <p><a th:href="'/Home/Cart?id=' + ${recipe.id}">Add this recipe to your Shopping cart</a></p>
+</div>
 <table>
     <tr>
         <th>Name</th>
