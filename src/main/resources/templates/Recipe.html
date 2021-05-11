@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8"></meta>
+    <meta charset="UTF-8">
     <title>Recipe</title>
-    <link rel="stylesheet" href="StylingRecipes.css">
+    <link rel="stylesheet" href="/StyleRecipe.css">
 </head>
 <body>
 <h1 th:text="${recipe.name}"></h1>
@@ -13,38 +13,23 @@
 <div>
     <p><a th:href="'/Home/Cart?id=' + ${recipe.id}">Add this recipe to your Shopping cart</a></p>
 </div>
-<table>
-    <tr>
-        <th>Recipe</th>
-        <th th:text="${recipe.name}"></th>
-    </tr>
-    <tr>
-        <th>Cuisine</th>
-        <th th:text="${recipe.cuisine}"></th>
-    </tr>
-    <tr>
-        <th>Difficulty</th>
-        <th th:text="${recipe.difficulty}"></th>
-    </tr>
-    <tr>
-        <th>Nr. of ingredients</th>
-        <th th:text="${recipe.numOfIngredients}"></th>
-    </tr>
-    <tr>
-        <th>Vegetarian</th>
-        <th th:text="${recipe.isVegetarian}"></th>
-    </tr>
-    <tr>
-        <th>Ingredients</th>
-        <th th:text="${recipe.ingredients}"></th>
-    </tr>
-    <tr>
-        <th>Cooking method</th>
-        <th th:text="${recipe.description}"></th>
-    </tr>
-    <tr>
-        <th><img width=400 th:src="'/'+ ${recipe.imageName}"/></th>
-    </tr>
-</table>
+        <h2>Recipe</h2>
+        <p th:text="${recipe.name}"></p>
+        <h2>Cuisine</h2>
+        <p th:text="${recipe.cuisine}"></p>
+        <h2>Difficulty</h2>
+        <p th:text="${recipe.difficulty}"></p>
+        <h2>Nr. of ingredients</h2>
+        <p th:text="'This recipe has ' + ${recipe.numOfIngredients} + ' number of ingredients'"></p>
+        <h2>Vegetarian</h2>
+        <p th:if="${recipe.isVegetarian==true}" th:text="YES"></p>
+        <p th:if="${recipe.isVegetarian==false}" th:text="NO"></p>
+        <h2>Ingredients</h2>
+        <p th:text="${recipe.ingredients}"></p>
+        <h2>Cooking method</h2>
+        <div class="card" style="width: 16rem;">
+            <p class="card-text" th:text="${recipe.description}"></p>
+        </div>
+        <p><img width=400 th:src="'/'+ ${recipe.imageName}"/></p>
 </body>
 </html>
